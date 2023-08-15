@@ -1,17 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import {StrictMode} from 'react';
+import  ReactDOM  from "react-dom";
+import { createRoot } from 'react-dom/client';
+function getButton()
+{
+  return 'hi babe'
+  
+}
+const App=function()//function base component..we can also use ()=> instate of fucntion
+{
+  const buttonText="CLICK ME!";
+  const style={backgroundColor:'red', color:'white'}
+  
+  return(
+    <div>
+      <label for="name" className="label" >entire email</label>
+      <input id="name" type="text" />
+      <button style={style}>
+        {/* submit */}
+        {/* {buttonText} */}
+        submit
+        {/* {getButton()} */}
+        </button>
+    </div>
+  )
+}
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  
     <App />
-  </React.StrictMode>
+  
+    
+  
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
