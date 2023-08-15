@@ -14,7 +14,7 @@ const App=function()//function base component..we can also use ()=> instate of f
   
   return(
     <div>
-      <label for="name" className="label" >entire email</label>
+      <label htmlFor="name" className="label" >entire email</label>
       <input id="name" type="text" />
       <button style={style}>
         {/* submit */}
