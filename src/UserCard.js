@@ -1,12 +1,14 @@
 import React from "react";
-const UserCard=()=>
+import SingleComment from "./SingleComment";
+const UserCard=(props)=>
 {
     return(
         <div className='ui card'>
             <div className='content'>
-                <div className='header'>this is alex</div>
+                <div className='header'>{props.name}</div>
                 <div className='description'>
-                   my name is alex and I live in america 
+                    {props.children}
+                
                 </div>
 
             </div>

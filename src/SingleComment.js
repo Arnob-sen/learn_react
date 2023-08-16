@@ -1,32 +1,32 @@
 import React from "react";
-import pic1 from './image/OIP.jpeg';
+
 const SingleComment=(props)=>
 
 {
   
     return(
-        <div className="comment">
-        <a href="/" className="avatar" >
-          <img src={props.picture} alt="profile picture" />
+        <div className='comment'>
+        <a href='/' className='avatar' >
+          <img src={props.picture} alt='profile picture' />
 
 
         </a>
         
         
-        <div className="content">
+        <div className='content'>
           <a href="/" className="author">
             {props.name}
           </a>
           
-          <div className="metadata">
-            <span className="date">
+          <div className='metadata'>
+            <span className='date'>
               {props.date}
 
             </span>
             
 
           </div>
-          <div className="text">
+          <div className='text'>
               {props.text}
 
             </div>

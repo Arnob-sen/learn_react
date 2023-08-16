@@ -19,20 +19,31 @@ const App=function()//function base component..we can also use ()=> instate of f
   
   return(
     <div className='ui comment'>
-      <UserCard />
+      <UserCard>
+        <div>
+          hello my name is sarah and i live in india
+        </div>
+      </UserCard>
+      <UserCard>
+
+      
     <SingleComment 
     name='sarah'
      date='today at 5.00Pm'
      text='its amazing'
      picture={pic1}
      /> 
+     </UserCard>
+     <UserCard>
     <SingleComment
      name='jack'
       date='today at 6.00Pm'
        text='so nice'
        picture={pic2}/> 
+       </UserCard>
+       <UserCard>
     <SingleComment name='alex' date='today at 7.00Pm' text='thats great' picture={pic3}/>   {/* decleare how to component */}
-     
+    </UserCard>
        
     
      </div>
