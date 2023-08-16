@@ -1,11 +1,13 @@
 import React from "react";
 import pic1 from './image/OIP.jpeg';
-const SingleComment=()=>
+const SingleComment=(props)=>
+
 {
+  
     return(
         <div className="comment">
         <a href="/" className="avatar" >
-          <img src={pic1} alt="profile picture" />
+          <img src={props.picture} alt="profile picture" />
 
 
         </a>
@@ -13,20 +15,19 @@ const SingleComment=()=>
         
         <div className="content">
           <a href="/" className="author">
-            sarah
-
+            {props.name}
           </a>
           
           <div className="metadata">
             <span className="date">
-              today at 5.00pm
+              {props.date}
 
             </span>
             
 
           </div>
           <div className="text">
-              its amazing
+              {props.text}
 
             </div>
 
