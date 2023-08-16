@@ -6,6 +6,7 @@ import pic1 from './image/OIP.jpeg'
 import SingleComment from "./SingleComment";
 import pic2 from './image/R.jpeg'
 import pic3 from './image/Wallpapers-pexels-photo.jpg'
+import UserCard from "./UserCard";
 function getButton()
 {
   return 'hi babe'
@@ -18,6 +19,7 @@ const App=function()//function base component..we can also use ()=> instate of f
   
   return(
     <div className='ui comment'>
+      <UserCard />
     <SingleComment 
     name='sarah'
      date='today at 5.00Pm'
